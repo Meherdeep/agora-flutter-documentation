@@ -178,7 +178,7 @@ Call the methods of this class to use all functionalities of the SDK. We recomme
 ```
 setChannelProfile(ChannelProfile profile)
 ```
-Sets the channel profile of the AgoraRtcEngine().
+Sets the channel profile of the [AgoraRtcEngine](#AgoraRtcEngine).
 
 The AgoraRtcEngine differentiates channel profiles and applies different optimization algorithms accordingly. For example, it prioritizes smoothness and low latency for a video call, and prioritizes video quality for a video broadcast.
 Users in the same channel must use the same channel profile.
@@ -194,9 +194,8 @@ Returns
 -   0: Success.
 -   < 0: Failure.
 
-> Note: Before calling this method to set a new channel profile, [destroy] the current RtcEngine and [create] a new RtcEngine first.
-> 
-> Call this method before [joinChannel], you cannot configure the channel profile when the channel is in use.
+> Note: Before calling this method to set a new channel profile, [destroy](#destroy) the current RtcEngine and [create](#create) a new RtcEngine first.
+> Call this method before [joinChannel](#joinChannel), you cannot configure the channel profile when the channel is in use.
 
 
 #### setClientRole()
@@ -210,7 +209,7 @@ This method sets the role of a user, such as a host or an audience (default), be
 
 This method can be used to switch the user role after a user joins a channel. In the Live Broadcast profile, when a user switches user roles after joining a channel, a successful setClientRole method call triggers the following callbacks:
 
--   The local client: [onClientRoleChanged]().
+-   The local client: [onClientRoleChanged](#onClientRoleChanged).
 -   The remote client: onUserJoined or onUserOffline (USER_OFFLINE_BECOME_AUDIENCE).
 
 
@@ -232,7 +231,7 @@ Allows a user to join a channel.
 
 Users in the same channel can talk to each other, and multiple users in the same channel can start a group chat. Users with different App IDs cannot call each other.
 
-You must call the [leaveChannel]() method to exit the current call before joining another channel.
+You must call the [leaveChannel](#leaveChannel) method to exit the current call before joining another channel.
 
 A successful joinChannel method call triggers the following callbacks:
 
@@ -290,7 +289,7 @@ Switches to a different channel.
 
 This method allows the audience of a Live-broadcast channel to switch to a different channel.
 
-After the user successfully switches to another channel, the [onLeaveChannel]() and [onJoinChannelSuccess]() callbacks are triggered to indicate that the user has left the original channel and joined a new one.
+After the user successfully switches to another channel, the [onLeaveChannel](#onLeaveChannel)() and [onJoinChannelSuccess](#onJoinChannelSuccess)() callbacks are triggered to indicate that the user has left the original channel and joined a new one.
 
 > Note: This method applies to the audience role in a Live-broadcast channel only.
 
