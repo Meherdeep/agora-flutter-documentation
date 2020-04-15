@@ -2711,4 +2711,4 @@ The version of the current SDK in the string format. For example, 1.0.8
 
 
 ## Agora Superstar
-This documentation is written and maintained by [Meherdeep Thakur](https://github.com/Meherdeep/) an Agora superstar. Meherdeep has a strong knowledge of ML/AI and Flutter app development. The Agora Superstar program empowers developers around the world to share their passion and technical expertise, and create innovative real-time communications apps and projects using Agora’s customizable SDKs. Think you’ve got what it takes to be an Agora Superstar? Apply [here]( https://www.agora.io/en/superstars-program/")
+This documentation is written and maintained by [Meherdeep Thakur](https://github.com/Meherdeep/) an Agora superstar. Meherdeep has a strong knowledge of ML/AI and Flutter app development. The Agora Superstar program empowers developers around the world to share their passion and technical expertise, and create innovative real-time communications apps and projects using Agora’s customizable SDKs. Think you’ve got what it takes to be an Agora Superstar? Apply [here]( https://www.agora.io/en/superstars-program/)
