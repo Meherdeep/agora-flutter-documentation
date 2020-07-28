@@ -460,9 +460,9 @@ Returns
 ```getUserInfoByUserAccount(String userAccount)```
 Gets the user information by passing in the user account.
 
-After a remote user joins the channel, the SDK gets the user account of the remote user, caches them in a mapping table object ([UserInfo](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1models_1_1_user_info.html)), and triggers the [onUserInfoUpdated](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_i_rtc_engine_event_handler.html#aa3e9ead25f7999272d5700c427b2cb3d) callback on the local client.
+After a remote user joins the channel, the SDK gets the user account of the remote user, caches them in a mapping table object ([UserInfo](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1models_1_1_user_info.html)), and triggers the [onUpdatedUserInfo](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_i_rtc_engine_event_handler.html#aa3e9ead25f7999272d5700c427b2cb3d) callback on the local client.
 
-After receiving the `onUserInfoUpdated` callback, you can call this method to get the user ID of the remote user from the userInfo object by passing in the user account.
+After receiving the `onUpdatedUserInfo` callback, you can call this method to get the user ID of the remote user from the userInfo object by passing in the user account.
 
 Parameters
 
@@ -491,9 +491,9 @@ Returns
 
 Gets the user information by passing in the user ID.
 
-After a remote user joins the channel, the SDK gets the user ID and user account of the remote user, caches them in a mapping table object ([UserInfo](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1models_1_1_user_info.html)), and triggers the [onUserInfoUpdated](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_i_rtc_engine_event_handler.html#aa3e9ead25f7999272d5700c427b2cb3d) callback on the local client.
+After a remote user joins the channel, the SDK gets the user ID and user account of the remote user, caches them in a mapping table object ([UserInfo](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1models_1_1_user_info.html)), and triggers the [onUpdatedUserInfo](https://docs.agora.io/en/Video/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_i_rtc_engine_event_handler.html#aa3e9ead25f7999272d5700c427b2cb3d) callback on the local client.
 
-After receiving the `onUserInfoUpdated` callback, you can call this method to get the user ID of the remote user from the userInfo object by passing in the user account.     
+After receiving the `onUpdatedUserInfo` callback, you can call this method to get the user ID of the remote user from the userInfo object by passing in the user account.     
 
  1. uid
 
